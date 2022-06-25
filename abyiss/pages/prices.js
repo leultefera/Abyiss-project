@@ -55,10 +55,18 @@ const Prices = ({ price }) => {
             <Head>
                 <title>Current Price</title>
             </Head>
-            <div >
+            <div>
                 <p>Exchange: <strong>{price.exchange}</strong></p>
                 <p>market: <strong>{price.market}</strong></p>
-                <p>price: <strong>{price.price}</strong></p>
+                <p>price: <strong>${price.price}</strong></p>
+                <p>Timestamp: <strong>{timestampConvert(price.timestamp)}</strong></p>
+            </div>
+            <hr />
+            {/* Incase there is more price listing */}
+            <div>
+                <p>Exchange: <strong>{price.exchange}</strong></p>
+                <p>market: <strong>{price.market}</strong></p>
+                <p>price: <strong>${price.price}</strong></p>
                 <p>Timestamp: <strong>{timestampConvert(price.timestamp)}</strong></p>
             </div>
         </>

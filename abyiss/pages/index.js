@@ -60,7 +60,7 @@ export default function Home({ amount }) {
         <meta name="keywords" content="Exchanges" />
       </Head>
       <div>
-        <h1 className={styles.title}>Welcome to Abyiss</h1>
+        <h1 className={styles.title}>Welcome to Abyiss Dashboard</h1>
 
         <h3>Abyiss have about <Link href="/exchanges" ><a className={styles.bounce}>{amount.count}</a></Link> number of Crypto Exchanges</h3>
 
